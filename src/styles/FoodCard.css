@@ -1,0 +1,239 @@
+/*  Card section starts */
+.restaurents-container {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+} /* Skeleton styles for Card section */
+.skeleton-cards {
+  width: 1100px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(188, 186, 186, 0.1);
+}
+@keyframes fadeIn {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+.skeleton-cardHeading {
+  width: 45%;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 8px;
+  animation: fadeIn 1.5s linear infinite alternate;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.skeleton-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.skeleton-card {
+  height: 400px;
+  width: calc(33% - 20px); /* Adjust the width and margin as needed */
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.3rem;
+  padding: 0.5rem;
+  background-color: rgb(240, 240, 240);
+}
+
+.skeleton-cardImage {
+  width: 100%;
+  height: 250px;
+  border-radius: 1.2rem;
+  background-color: #ddd;
+  animation: fadeIn 1.5s linear infinite alternate;
+  margin-bottom: 10px;
+}
+
+.skeleton-cardName {
+  width: 10rem;
+  height: 14px;
+  background-color: #ddd;
+  animation: fadeIn 1.5s linear infinite alternate;
+  margin-bottom: 9px;
+  border-radius: 5px;
+}
+.skeleton-cardName2 {
+  width: 14rem;
+  height: 14px;
+  background-color: #ddd;
+  animation: fadeIn 1.5s linear infinite alternate;
+  margin-bottom: 9px;
+  border-radius: 5px;
+}
+.skeleton-hr {
+  margin-top: 0;
+  color: rgb(240, 239, 239);
+}
+.skeleton-safety {
+  height: 14px;
+  width: 100%;
+  animation: fadeIn 1.5s linear infinite alternate;
+  border-radius: 10px;
+  margin-bottom: 7px;
+}
+
+.skeleton-safety:last-child {
+  width: 50%;
+}
+
+.restaurents-container h2 {
+  height: 32px;
+  font-size: 1.8rem;
+  font-weight: 450;
+  color: #1c1c1c;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.restaurents-container .card-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.restaurents-container .card-container .card-box {
+  height: 400px;
+  width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+  margin: 10px 10px 1.4rem 10px; /* Adjust the margin as needed */
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+}
+.restaurents-container .card-container .card-box:hover {
+  border-color: rgb(255, 255, 255);
+  box-shadow: rgba(28, 28, 28, 0.12) 0px 0.4rem 1.8rem;
+  cursor: pointer;
+}
+.card-box .card-inbox {
+  height: 98%;
+  width: 100%;
+}
+
+.card-box .card-inbox .card-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 1.2rem;
+}
+
+.card-box .card-inbox .card-image img {
+  height: inherit;
+  width: 100%;
+  border-radius: 1.2rem;
+  background-position: cover;
+}
+
+.card-inbox .card-name {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0 10px 0;
+  gap: 27%;
+}
+
+.card-inbox .card-name p {
+  color: #1c1c1c;
+  font-size: 17px;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-inbox .card-name .rating {
+  width: 13%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  border-radius: 5px;
+  gap: 2px;
+}
+
+.card-inbox .card-name .rating span {
+  height: fit-content;
+  width: fit-content;
+  width: fit-content;
+  height: 18px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+.card-inbox .card-name .rating img {
+  height: 9.1px;
+  width: 9.1px;
+}
+
+.card-inbox .special {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -5px;
+  gap: 10%;
+}
+.card-inbox .special p {
+  color: #696969;
+  font-size: 14px;
+}
+.card-inbox .special .special-name {
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+}
+
+.card-inbox .card-time {
+  height: 21px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: #363636;
+}
+.card-inbox hr {
+  border-color: #e8e8e8;
+  margin-top: 0.5rem;
+  opacity: 0.5;
+}
+.card-inbox .safety {
+  height: 34px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-inbox .safety img {
+  width: 48px;
+  height: 18px;
+}
+.card-inbox .safety p {
+  color: #828282;
+  font-size: 12px;
+  margin-left: 10px;
+}

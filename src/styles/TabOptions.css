@@ -1,0 +1,44 @@
+.taboptions {
+  width: 1100px;
+  display: flex;
+  margin: 0 auto 0 auto;
+}
+.tab-item {
+  height: 88px;
+  min-width: 185px;
+  max-width: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2rem;
+  transition: all 0.1s ease-in-out;
+}
+.tab-item .tabimage-container {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(240, 240, 240);
+  margin: 3px 5px;
+}
+.tab-item .tab-image {
+  height: 30px;
+  width: 30px;
+}
+.tab-item p {
+  font-size: 20px;
+  margin: 3px 10px;
+}
+.active-tab {
+  border-bottom: 2px solid #ef4f5f;
+}
+.active-tab .tab-name {
+  color: #ef4f5f;
+}
+.tab-content {
+  height: auto;
+  width: auto;
+}

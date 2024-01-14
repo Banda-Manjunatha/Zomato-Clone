@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signup-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c1c1c;
+}
+.signup-box {
+  width: 448px;
+  height: 70%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 0.6rem;
+  transform: scale(1);
+  box-shadow: rgba(28, 28, 28, 0.15) 0px 1.2rem 7rem;
+  transition: transform 0.5s ease 0s;
+}
+.signup-box h2 {
+  text-align: center;
+  color: #4f4f4f;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+.signup-box .heading {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.signup-box input {
+  height: 48px;
+  width: 400px;
+  padding: 13px 12px;
+  border: 0.1rem solid rgb(207, 207, 207);
+  font-size: 18px;
+  outline: none;
+  border-radius: 0.6rem;
+  color: rgb(28, 28, 28);
+  opacity: 0.7;
+  margin: 0.8rem auto 0.7rem auto;
+}
+.conditions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+input[type="checkbox"] {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 3px 8px 3px 4px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  appearance: auto;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(156, 156, 156);
+  transition: all 0.4s ease 0s;
+  accent-color: #ef4f5f;
+}
+
+.conditions p {
+  color: #696969;
+  font-size: 12px;
+}
+.conditions p span {
+  color: #ef4f5f;
+}
+.signup-box button {
+  height: 48px;
+  width: 400px;
+  padding: 13px 12px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  color: white;
+  background-color: lightgray;
+  border-radius: 0.6rem;
+  cursor: not-allowed;
+}
+button.enabled {
+  cursor: pointer;
+  background-color: #ef4f5f;
+  opacity: 0.85; /* Change to your desired color */
+}
+button:active.enabled {
+  background-color: #ef4f5f; /* Change to your desired color on hover */
+  opacity: 1;
+}

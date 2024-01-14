@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.home-section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.hero-section {
+  background-image: url("../assets/background_image.avif");
+  background-size: cover;
+  height: 420px;
+  overflow: hidden;
+  opacity: 1;
+  margin-bottom: 40px;
+}
+
+.nav-section {
+  display: flex;
+  width: 1100px;
+  height: 72px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+  list-style: none;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.navbar li {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  font-weight: 300;
+}
+.signout {
+  cursor: pointer;
+}
+.app {
+  width: fit-content;
+  font-size: 0.85rem;
+  outline: none;
+  margin-right: 480px;
+}
+.app .appdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.appdiv img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.app p {
+  color: #fff;
+  font-weight: 400;
+}
+.heading-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-items: center;
+}
+.heading-section .logo {
+  margin-top: 20px;
+  opacity: 0.95;
+  height: 61px;
+  width: 290px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../assets/sticker.avif");
+  background-size: cover;
+  overflow: hidden;
+}
+.caption {
+  height: 48px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.caption p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+.search-container {
+  width: 60%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 1px solid;
+  background-color: #fff;
+}
+.search-container img {
+  height: 20px;
+  width: 20px;
+  margin-right: 3px;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+.search-input {
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.search-select {
+  font-size: 0.9rem;
+  color: gray;
+  border: none;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-input {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 75%;
+  font-size: 0.85rem;
+}
+
+/* Card-Home */
+.homecard-container {
+  width: 85%;
+  height: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  padding: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+.homecard-container a {
+  width: 48%;
+  height: 260px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgb(232, 232, 232);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.homecard-container a:hover {
+  transform: scale(1.05);
+}
+.homecard-image-1 {
+  background-image: url("../assets/home-card.avif");
+  background-size: cover;
+  background-position: center; /* Center the image vertically */
+  overflow: hidden;
+  width: 100%;
+  height: 170px;
+  position: relative;
+}
+.homecard-image-2 {
+  background-image: url("../assets/home-card2.avif");
+  background-size: cover;
+  background-position: center; /* Center the image vertically */
+  overflow: hidden;
+  width: 100%;
+  height: 170px;
+  position: relative;
+}
+.homecard-container .homecard-content {
+  height: 30%;
+  width: 100%;
+}
+.homecard-heading {
+  padding: 15px 0 5px 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #363636;
+}
+.homecard-text {
+  padding: 0 0 20px 20px;
+  font-size: 1rem;
+  color: #696969;
+}
+.city-coontainer {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 130px;
+  margin-top: 80px;
+  padding: 0;
+  margin-bottom: 150px;
+}
+.city-heading {
+  font-size: 2.2rem;
+  color: #363636;
+  margin: 15px 0 30px 0;
+  font-weight: 350;
+}
+.city-heading p span {
+  font-weight: 450;
+}
+.city-selection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+.city-selection a {
+  width: 33.33%;
+  height: 78px;
+  border: 1px solid;
+  margin-right: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+}
+.city-selection a:hover {
+  box-shadow: 0px 2px 2px rgba(169, 169, 169, 0.5);
+}
+.city-select {
+  padding: 10px;
+}
+.city-select p {
+  color: #1c1c1c;
+  font-size: 20px;
+}
+.city-select .number {
+  color: #363636;
+  font-size: 15px;
+}
+/*  Mobile container section starts*/
+.mobileapp-container {
+  width: 100%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #fffbf7;
+}
+.mobileapp {
+  width: 41%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0rem;
+}
+
+.mobile-pic {
+  width: 240px;
+  height: 270px;
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+}
+.zomato-app-pic {
+  background-image: url("../assets/Zomato-App.avif");
+  background-size: cover;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.mobileapp-data {
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.app-info {
+  width: 450px;
+  margin-left: 1rem;
+  padding-left: 10px;
+}
+.app-heading h2 {
+  font-size: 2.6rem;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #363636;
+}
+.app-heading p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  line-height: 30px;
+}
+.contact {
+  font-size: 0.95rem;
+}
+.contact label {
+  padding: 0 70px 0 0;
+}
+input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.4);
+  accent-color: #ef4f5f;
+}
+
+.contact-email input {
+  border: 1px solid lightgray;
+  height: 48px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  width: 60%;
+  color: gray;
+  outline: none;
+}
+.contact-email button,
+.contact-number button {
+  height: 48px;
+  width: 36%;
+  border: none;
+  font-size: 0.9rem;
+  color: white;
+  padding: 0 5px 0 5px;
+  background-color: #ef4f4f;
+  opacity: 0.9;
+  border-radius: 0.6rem;
+  outline: none;
+}
+.contact-email button:hover,
+.contact-number button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.contact-number {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.contact-box {
+  width: 60%;
+  height: 48px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  border-radius: 0.6rem;
+  margin-right: 10px;
+}
+.contact-box select {
+  margin: 0;
+  height: inherit;
+  border: none;
+  font-size: 0.9rem;
+  width: 20%;
+  overflow: hidden;
+  outline: none;
+  color: rgb(89, 85, 85);
+}
+.contact-box input {
+  height: 100%;
+  width: 80%;
+  border: none;
+  overflow: hiden;
+  font-size: 0.9rem;
+  padding-left: 20px;
+  outline: none;
+}
+.store {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin-top: 20px;
+}
+.store p {
+  height: fit-content;
+  font-size: 1rem;
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.store-images {
+  display: flex;
+  height: 60%;
+}
+.image {
+  height: 40px;
+  width: 137;
+  padding: 0;
+  margin-right: 20px;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.explore-container {
+  height: 402px;
+  width: 100%;
+  padding: 0;
+  outline: none;
+  margin-top: 30px;
+}
+.explore-text {
+  height: 100%;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.explore-text h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.explore-text p {
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: 300;
+}
