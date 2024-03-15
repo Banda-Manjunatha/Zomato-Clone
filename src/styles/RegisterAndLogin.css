@@ -97,3 +97,91 @@ button:active.enabled {
   background-color: #ef4f5f; /* Change to your desired color on hover */
   opacity: 1;
 }
+.signup-box input:focus{
+  border: 1.5px groove #ef4f5f;
+}
+@media(max-width:800px){
+  .signup-box {
+    width: 60%;
+    height: auto;
+    padding: 0 1rem;
+  }
+  .signup-box h2 {
+    font-size: 1.5rem;
+  }
+  form{
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .signup-box input {
+    width: 90%;
+    border: 2px solid;
+    padding: 12px 10px;
+    height: auto;
+    font-size: 13px;
+    margin: auto;
+  }
+  .conditions {
+    margin-bottom: 1rem;
+    width: 90%;
+    gap: 10px;
+  }
+  input[type="checkbox"]{
+      width: auto;
+      height: auto;
+  }
+  .conditions p {
+    font-size: 11px;
+  }
+  .signup-box button {
+    width: 90%;
+    padding: 12px 10px;
+    height: auto;
+    font-size: 14px;
+  }
+}
+
+
+@media(max-width:500px){
+  .signup-box {
+    width: 80%;
+    height: auto;
+    padding: 0 .3rem;
+  }
+  .signup-box h2 {
+    font-size: 1.2rem;
+  }
+  .signup-box input {
+    width: 95%;
+    border: 1px solid;
+    padding: 8px 10px;
+    height: auto;
+    font-size: 10px;
+    margin: auto;
+  }
+  
+  .conditions {
+    margin-bottom: 1rem;
+    width: 95%;
+    gap: 7px;
+  }
+  input[type="checkbox"]{
+      width: auto;
+      height: auto;
+  }
+  .conditions p {
+    font-size: 9px;
+  }
+  .signup-box button {
+    width: 95%;
+    padding: 8px 10px;
+    height: auto;
+    font-size: 10px;
+  }
+}
+

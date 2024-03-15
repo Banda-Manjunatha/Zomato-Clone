@@ -90,8 +90,6 @@ const RegisterAndLogin = () => {
                 <p>
                   I agree to Zomato's{" "}
                   <span>Terms of Services, Privacy Policy</span> and{" "}
-                </p>
-                <p>
                   {" "}
                   <span>Content Policies</span>
                 </p>
