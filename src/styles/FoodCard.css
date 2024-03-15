@@ -1,13 +1,13 @@
 /*  Card section starts */
 .restaurents-container {
-  width: 1100px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 } /* Skeleton styles for Card section */
 .skeleton-cards {
-  width: 1100px;
+  width: 90%;
   margin: 0 auto;
   border: 1px solid lightgray;
   border-radius: 10px;
@@ -26,7 +26,7 @@
   height: 30px;
   background-color: #ddd;
   border-radius: 8px;
-  animation: fadeIn 1.5s linear infinite alternate;
+  animation: fadeIn 1s linear infinite alternate;
   margin-top: 1rem;
   margin-left: 0.5rem;
   margin-bottom: 1rem;
@@ -54,7 +54,7 @@
   height: 250px;
   border-radius: 1.2rem;
   background-color: #ddd;
-  animation: fadeIn 1.5s linear infinite alternate;
+  animation: fadeIn 1s linear infinite alternate;
   margin-bottom: 10px;
 }
 
@@ -62,7 +62,7 @@
   width: 10rem;
   height: 14px;
   background-color: #ddd;
-  animation: fadeIn 1.5s linear infinite alternate;
+  animation: fadeIn 1s linear infinite alternate;
   margin-bottom: 9px;
   border-radius: 5px;
 }
@@ -70,7 +70,7 @@
   width: 14rem;
   height: 14px;
   background-color: #ddd;
-  animation: fadeIn 1.5s linear infinite alternate;
+  animation: fadeIn 1s linear infinite alternate;
   margin-bottom: 9px;
   border-radius: 5px;
 }
@@ -81,7 +81,7 @@
 .skeleton-safety {
   height: 14px;
   width: 100%;
-  animation: fadeIn 1.5s linear infinite alternate;
+  animation: fadeIn 1s linear infinite alternate;
   border-radius: 10px;
   margin-bottom: 7px;
 }
@@ -105,19 +105,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 5rem;
 }
 
 .restaurents-container .card-container .card-box {
-  height: 400px;
+  height: 430px;
   width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
   margin: 10px 10px 1.4rem 10px; /* Adjust the margin as needed */
   display: flex;
   flex-direction: column;
   border-radius: 1.5rem;
   padding: 0.5rem;
+  border: 1px solid rgb(243, 240, 240);
 }
 .restaurents-container .card-container .card-box:hover {
-  border-color: rgb(255, 255, 255);
+  border: 1px solid rgb(231, 229, 229);
   box-shadow: rgba(28, 28, 28, 0.12) 0px 0.4rem 1.8rem;
   cursor: pointer;
 }
@@ -133,7 +135,7 @@
 }
 
 .card-box .card-inbox .card-image img {
-  height: inherit;
+  height: 100%;
   width: 100%;
   border-radius: 1.2rem;
   background-position: cover;
@@ -191,6 +193,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   margin-top: -5px;
   gap: 10%;
@@ -236,4 +239,256 @@
   color: #828282;
   font-size: 12px;
   margin-left: 10px;
+}
+
+@media(max-width:1024px){
+  .skeleton-card {
+    height: 340px;
+    width: calc(33.33% - 10px); /* Adjust the width and margin as needed */
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.3rem;
+    padding: 0.5rem;
+    background-color: rgb(240, 240, 240);
+  }
+  .skeleton-cardName{
+    width: 70%;
+    height: 15px;
+  }
+  .skeleton-safety{
+    width: 80%;
+  }
+  .skeleton-cardName2 {
+    width: 90%;
+  }
+  .restaurents-container h2{
+    font-size: 22px;
+  }
+  .restaurents-container .card-container .card-box {
+    height: 360px;
+  }
+  .card-box .card-inbox .card-image {
+    width: 100%;
+    height: 210px;
+    border-radius: 1.2rem;
+  }
+  .card-inbox .card-name p{
+    font-size: 13px;
+  }
+  .card-inbox .card-name .rating{
+    height: 15px;
+    overflow: none;
+    width: 30px;
+  }
+  .card-inbox .card-name .rating span{
+    height: 15px;
+    font-size: 10px;
+  }
+  .card-inbox .special{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .card-inbox .special p{
+    font-size: 12px;
+  }
+  .card-time p{
+    font-size: 12px;
+  }
+  .card-inbox .safety img {
+    height: 12px;
+    width: 20px;
+  }
+  .card-inbox .safety p{
+    font-size: 10px;
+  }
+}
+
+@media(max-width:800px){
+  .skeleton-card {
+    height: 270px;
+    width: calc(33% - 8px); /* Adjust the width and margin as needed */
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.3rem;
+    padding: 0.4rem;
+    background-color: rgb(240, 240, 240);
+  }
+  .skeleton-cardImage {
+    height: 160px;
+  }
+  .skeleton-cardHeading {
+    width: 70%;
+    height: 17px;
+  }
+  .skeleton-cardName{
+    width: 70%;
+    height: 9px;
+  }
+  .skeleton-safety{
+    width: 80%;
+    height: 9px;
+  }
+  .skeleton-cardName2 {
+    width: 90%;
+    height: 8px;
+  }
+  .restaurents-container h2{
+    font-size: 18px;
+    margin: 10px;
+  }
+  .restaurents-container .card-container .card-box {
+    height: 250px;
+  }
+  .card-box .card-inbox .card-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+  }
+  .card-box .card-inbox .card-image img{
+    border-radius: 15px;
+  }
+  .card-inbox .card-name p{
+    font-size: 10px;
+  }
+  .card-inbox .card-name{
+  }
+  .card-inbox .card-name .rating{
+    height: 10px;
+    overflow: none;
+    width: 25px;
+  }
+  .card-inbox .card-name .rating span{
+    height: 10px;
+    font-size: 7px;
+  }
+  .card-inbox .card-name .rating img{
+    height: 8px;
+    width: fit-content;
+  }
+  .card-inbox .special{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .card-inbox .special p{
+    font-size: 8px;
+  }
+  .card-inbox .card-time{
+    height: auto;
+  }
+  .card-time p{
+    font-size: 8px;
+  }
+  .card-inbox .safety img {
+    height: 8px;
+    width: 14px;
+  }
+  .card-inbox hr{
+    margin: 4px;
+  }
+  .card-inbox .safety p{
+    font-size: 6px;
+  }
+  .restaurents-container .card-container .card-box{
+    margin: 0 0 10px 0;
+    width: calc(33.33% - 10px); 
+    padding: 4px;
+    border-radius: 20px;/* Adjust the width and margin as needed */
+  }
+}
+
+@media(max-width:500px){
+  .skeleton-card {
+    height: 230px;
+    width: calc(48% - 8px); /* Adjust the width and margin as needed */
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: .7rem;
+    padding: 0.4rem;
+    background-color: rgb(240, 240, 240);
+  }
+  .skeleton-cardImage {
+    height: 120px;
+    border-radius: 10px;
+  }
+  .skeleton-cardHeading {
+    width: 70%;
+    height: 13px;
+  }
+  .skeleton-cardName{
+    width: 70%;
+    height: 6px;
+  }
+  .skeleton-safety{
+    width: 80%;
+    height: 6px;
+  }
+  .skeleton-cardName2 {
+    width: 90%;
+    height: 6px;
+  }
+  .restaurents-container h2{
+    font-size: 16px;
+    margin: 10px;
+  }
+  .restaurents-container .card-container .card-box {
+    height: 230px;
+  }
+  .card-box .card-inbox .card-image {
+    width: 100%;
+    height: 120px;
+    border-radius: 11px;
+  }
+  .card-box .card-inbox .card-image img{
+    border-radius: 11px;
+  }
+  .card-inbox .card-name p{
+    font-size: 10px;
+  }
+  .card-inbox .card-name{
+  }
+  .card-inbox .card-name .rating{
+    height: 10px;
+    overflow: none;
+    width: 25px;
+  }
+  .card-inbox .card-name .rating span{
+    height: 10px;
+    font-size: 7px;
+  }
+  .card-inbox .card-name .rating img{
+    height: 8px;
+    width: fit-content;
+  }
+  .card-inbox .special{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .card-inbox .special p{
+    font-size: 8px;
+  }
+  .card-inbox .card-time{
+    height: auto;
+  }
+  .card-time p{
+    font-size: 8px;
+  }
+  .card-inbox .safety img {
+    height: 8px;
+    width: 14px;
+  }
+  .card-inbox hr{
+    margin: 4px;
+  }
+  .card-inbox .safety p{
+    font-size: 6px;
+  }
+  .restaurents-container .card-container .card-box{
+    margin: 0 0 10px 0;
+    width: calc(48% - 10px); 
+    padding: 4px;
+    border-radius: 14px;/* Adjust the width and margin as needed */
+  }
 }

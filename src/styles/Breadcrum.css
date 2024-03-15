@@ -1,0 +1,30 @@
+.breadcrum{
+   width: 90%;
+   margin: 1% auto;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: .8rem;
+}
+@media(max-width:800px){
+    .container{
+        font-size: .65rem;
+    }
+    .container img{
+        height: 10px;
+        width: fit-content;
+    }
+}
+@media(max-width:500px){
+    .container{
+        font-size: .55rem;
+    }
+    .container img{
+        height: 7px;
+        width: fit-content;
+        padding: 0 4px;
+    }
+}

@@ -1,0 +1,265 @@
+.productDisplay{
+    display: flex;
+    width: 90%;
+    margin: 4% auto;
+    gap: 2%;
+    height: 30% !important;
+}
+.product-left{
+    width: 40%;
+    max-width: 50%;
+}
+.product-img{
+    width: 100%;
+}
+.product-img img{
+    height: 320px;
+    width: fit-content;
+    border-radius: 20px;
+    width: 100%;
+}
+.product-right{
+    display: flex;
+    flex-direction: column;
+}
+.restaurent{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.product-right .restaurent img{
+    height: 2rem;
+    width: fit-content;
+    margin-right: 5px;
+}
+.product-right h1{
+    font-weight: 600;
+}
+.product-right h3{
+    font-weight: 500;
+}
+.product-star{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.product-star span{
+    margin-left: 5px;
+}
+.product-star img{
+    height: .9rem;
+}
+.dish{
+    margin-bottom: .7rem;
+}
+.dish span{
+    font-weight: 600;
+    color: rgb(234, 42, 42);
+}
+.price{
+    margin: 0 0 1rem 0;
+}
+.old{
+    font-size: 1rem;
+    font-weight: 700;
+    color: gray;
+    text-decoration: line-through;
+    margin: 0rem 1rem 1rem 0;
+}
+.new{
+    font-weight: 700;
+    color: rgb(231, 55, 55);
+}
+.delivery-box img{
+    height: 1.1rem;
+    margin-right: 4px;
+}
+.delivery-box{
+    color: gray;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    margin: .5rem 0;
+}
+.delivery-box p{
+    margin-right: 1rem;
+}
+.product-right button{
+    width: fit-content;
+    padding: .7rem 2rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: rgb(237, 46, 46);
+    color: white;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.product-right button:hover{
+    transform: scale(1.09);
+}
+.product-right button:active{
+    background: rgb(246, 106, 106);
+}
+.product-right hr{
+    display: none;
+}
+@media(max-width:1024px){
+    .product-img img{
+        height: 280px;
+    }
+    .product-right h1{
+        font-size: 25px;
+    }
+    .product-right .restaurent img {
+        height: 20px;
+    }
+    .product-right h3{
+        font-size: 17px;
+    }
+    .product-star span{
+        font-size: 12px;
+    }
+    .product-star img {
+        height: .8rem;
+    }
+    .delivery-box img {
+        height: .9rem;
+    }
+    .delivery-box p{
+        font-size: 13px;
+    }
+    .dish{
+        font-size: 14px;
+    }
+    .price{
+        font-size: 14px;
+    }
+    .old{
+        font-size: 14px;
+    }
+    .product-right button{
+        padding: 6px 15px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:800px){
+    .product-left {
+        width: 50%;
+        max-width: 60%;
+    }
+    .product-img img{
+        height: 230px;
+    }
+    .product-right h1{
+        font-size: 18px;
+    }
+    .product-right .restaurent img {
+        height: 13px;
+    }
+    .product-right h3{
+        font-size: 12px;
+    }
+    .product-star span{
+        font-size: 11px;
+    }
+    .product-star img {
+        height: .7rem;
+    }
+    .delivery-box img {
+        height: .7rem;
+    }
+    .delivery-box{
+        margin: 5px 0;
+    }
+    .delivery-box p{
+        font-size: 10px;
+    }
+    .dish{
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .price{
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    .old{
+        font-size: 14px;
+    }
+    .product-right button{
+        padding: 6px 15px;
+        font-size: 11px;
+    }
+}
+
+@media(max-width:500px){
+    .productDisplay{
+        display: flex;
+        flex-direction: column;
+        margin:1rem  auto;
+    }
+    .product-left {
+        width: 90%;
+        margin: auto;
+    }
+    .product-img{
+        width: 85%;
+        margin: auto;
+    }
+    .product-img img{
+        height: 170px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+        border-radius: 15px;
+    }
+    .product-right h1{
+        font-size: 16px;
+        font-weight: 550;
+    }
+    .product-right .restaurent img {
+        height: 12px;
+    }
+    .product-right h3{
+        font-size: 11px;
+    }
+    .product-star span{
+        font-size: 10px;
+    }
+    .product-star img {
+        height: .6rem;
+    }
+    .delivery-box img {
+        height: .6rem;
+    }
+    .delivery-box{
+        margin: 5px 0;
+    }
+    .delivery-box p{
+        font-size: 9px;
+    }
+    .dish{
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+    .price{
+        font-size: 13px;
+        margin-bottom: 7px;
+        gap: 0;
+    }
+    .old{
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    .product-right button{
+        padding: 4px 13px;
+        font-size: 10px;
+    }
+    .product-right hr{
+        display: block;
+        margin: 1rem 0 0 0;
+    }
+}

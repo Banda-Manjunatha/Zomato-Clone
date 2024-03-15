@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Components/Home";
-import CreateRestaurent from "./Components/CreateReastaurent";
-import GetApp from "./Components/GetApp.js";
-import AtpRestaurent from "./Components/AtpRestaurent.js";
 import RegisterAndLogin from "./Components/RegisterAndLogin.js";
+import Product from "./pages/Product.jsx";
+import Cart from "./pages/Cart.jsx";
+import Home from "./Components/Home.js";
+
 const App = () => {
   return (
     <div>
@@ -12,9 +12,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<RegisterAndLogin />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/mobile" element={<GetApp />} />
-          <Route path="/partner-with-us" element={<CreateRestaurent />} />
-          <Route path="/anantapur" element={<AtpRestaurent />} />
+          <Route path="/product" element={<Product />} >
+            <Route path=":productId"/>
+          </Route>
+          <Route path="/cart" element={<Cart/>}/>
         </Routes>
       </Router>
     </div>
