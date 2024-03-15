@@ -17,7 +17,7 @@ const Nearby = () => {
                     <Link to={`/product/${data._id}`} onClick={window.scrollTo(0,0)}>
                         <div className="card-inbox">
                             <div className="card-image">
-                                <img src={data.Image} alt="image" className="foodImg"/>
+                                <img src={data.Image} alt="" className="foodImg"/>
                             </div>
                             <div className="card-name">
                             <p>{data.name}</p>

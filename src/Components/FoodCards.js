@@ -35,7 +35,7 @@ const FoodCards = ({searchQuery}) => {
     }, 1500);
 
     return () => clearTimeout(timeoutID);
-  }, []);
+  }, [allProduct]);
 
   useEffect(() => {
     if (!loading) {
@@ -67,7 +67,7 @@ const FoodCards = ({searchQuery}) => {
 
                   <div className="card-inbox">
                     <div className="card-image">
-                        <img src={data.Image} alt="image" className="foodImg"/>
+                        <img src={data.Image} alt="" className="foodImg"/>
                     </div>
                     <div className="card-name">
                       <p>{data.name}</p>

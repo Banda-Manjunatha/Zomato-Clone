@@ -25,7 +25,7 @@ const RegisterAndLogin = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    if (type == "signup") {
+    if (type === "signup") {
       createUserWithEmailAndPassword(database, email, password)
         .then((data) => {
           console.log(data);

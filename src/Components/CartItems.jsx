@@ -34,6 +34,9 @@ const CartItems = () => {
                     </div>
                 )
             }
+            else {
+                return null;
+            }
         })}
         <div className="allCart">
             <div className="cart-total">
