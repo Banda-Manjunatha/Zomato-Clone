@@ -57,7 +57,7 @@ const Home = () => {
             </div>
             <div className="search-container">
               <img
-                src="https://res.cloudinary.com/dmn7qksnf/image/upload/v1709401008/location_loxedn.png"
+                src="https://res.cloudinary.com/dmn7qksnf/image/upload/v1709401008/location_loxedn.png"  alt=""
               />
               <select className="search-select">
                 <option value="town">Bengaluru</option>

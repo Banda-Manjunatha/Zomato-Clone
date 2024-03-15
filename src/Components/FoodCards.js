@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-//import RestaurentData from "../pages/RestaurentData.js";
 import "../styles/FoodCard.css";
 import { ShopContext } from "../Context/ShopContext.jsx";
 import { Link } from "react-router-dom";
@@ -22,11 +21,11 @@ const CardsSkeleton = () => (
   </div>
 );
 
-const FoodCards = ({searchQuery}) => {
+const FoodCards = ({ searchQuery }) => {
   const [loading, setLoading] = useState(true);
   const { allProduct } = useContext(ShopContext);
   const [filteredResult, setFilteredResult] = useState([]);
-  
+
   useEffect(() => {
     const timeoutID = setTimeout(() => {
       // Initially, set the filtered restaurants to the entire dataset
@@ -35,7 +34,7 @@ const FoodCards = ({searchQuery}) => {
     }, 1500);
 
     return () => clearTimeout(timeoutID);
-  }, [allProduct]);
+  }, [allProduct]); // Include allProduct in the dependency array
 
   useEffect(() => {
     if (!loading) {
@@ -48,7 +47,7 @@ const FoodCards = ({searchQuery}) => {
       setFilteredResult(filtered);
       console.log(filtered);
     }
-  }, [searchQuery, loading]);
+  }, [searchQuery, loading, allProduct]); // Include allProduct in the dependency array
 
   return (
     <div>
@@ -59,53 +58,51 @@ const FoodCards = ({searchQuery}) => {
           <div>
             <h2>Best Food for you in your locality</h2>
             <div className="card-container">
-
-              {filteredResult.length>0 ? (
-              filteredResult.map((data, index) => (
-                <div className="card-box" key={index}>
-                                  <Link to={`/product/${data._id}`}>
-
-                  <div className="card-inbox">
-                    <div className="card-image">
-                        <img src={data.Image} alt="" className="foodImg"/>
-                    </div>
-                    <div className="card-name">
-                      <p>{data.name}</p>
-                      <div className="rating">
-                        <span className="rating">{data.rating}</span>
-                        <img
-                          src="https://res.cloudinary.com/dmn7qksnf/image/upload/v1709401614/star_ehk049.png"
-                          alt="star"
-                        />
+              {filteredResult.length > 0 ? (
+                filteredResult.map((data, index) => (
+                  <div className="card-box" key={index}>
+                    <Link to={`/product/${data._id}`}>
+                      <div className="card-inbox">
+                        <div className="card-image">
+                          <img src={data.Image} alt="" className="foodImg" />
+                        </div>
+                        <div className="card-name">
+                          <p>{data.name}</p>
+                          <div className="rating">
+                            <span className="rating">{data.rating}</span>
+                            <img
+                              src="https://res.cloudinary.com/dmn7qksnf/image/upload/v1709401614/star_ehk049.png"
+                              alt="star"
+                            />
+                          </div>
+                        </div>
+                        <div className="special">
+                          <p className="special-name">{data.special}</p>
+                          <p>₹{data.new_price}</p>
+                        </div>
+                        <div className="card-time">
+                          <p>{data.time}</p>
+                        </div>
+                        <hr />
+                        <div className="safety">
+                          <img
+                            src="https://res.cloudinary.com/dmn7qksnf/image/upload/v1709400688/safety_pjq57b.webp"
+                            alt="safety"
+                          />
+                          <p>
+                            Follows all Max Safety measures to ensure your food
+                            is safe
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="special">
-                      <p className="special-name">{data.special}</p>
-                      <p>₹{data.new_price}</p>
-                    </div>
-                    <div className="card-time">
-                      <p>{data.time}</p>
-                    </div>
-                    <hr />
-                    <div className="safety">
-                      <img
-                        src="https://res.cloudinary.com/dmn7qksnf/image/upload/v1709400688/safety_pjq57b.webp"
-                        alt="safety"
-                      />
-                      <p>
-                        Follows all Max Safety measures to ensure your food
-                        is safe
-                      </p>
-                    </div>
+                    </Link>
                   </div>
-                  </Link>
-                </div>
-              ))):(
+                ))
+              ) : (
                 <p className="no-results">
-                No restaurants found matching your search.
-              </p>
-              )
-            }
+                  No restaurants found matching your search.
+                </p>
+              )}
             </div>
           </div>
         )}
@@ -113,6 +110,5 @@ const FoodCards = ({searchQuery}) => {
     </div>
   );
 };
-
 
 export default FoodCards;
