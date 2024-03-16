@@ -14,7 +14,7 @@
 }
 .signup-box {
   width: 448px;
-  height: 70%;
+  height: fit-content;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@
   transform: scale(1);
   box-shadow: rgba(28, 28, 28, 0.15) 0px 1.2rem 7rem;
   transition: transform 0.5s ease 0s;
+  padding-bottom: 2rem;
 }
 .signup-box h2 {
   text-align: center;
