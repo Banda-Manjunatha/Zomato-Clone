@@ -50,6 +50,7 @@ header ul {
   border: none;
   padding-right: 20px;
   color: #696969;
+  background: transparent;
 }
 .container .search {
   height: 54px;

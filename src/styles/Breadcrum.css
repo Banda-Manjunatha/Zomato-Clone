@@ -9,6 +9,10 @@
     gap: 10px;
     font-size: .8rem;
 }
+.link-bread{
+    text-decoration: none;
+    color: black;
+}
 @media(max-width:800px){
     .container{
         font-size: .65rem;
