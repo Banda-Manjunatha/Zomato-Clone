@@ -86,14 +86,12 @@ const RegisterAndLogin = () => {
                 id="checkbox"
                 onChange={handleInputChange}
               />
-              <div className="text">
-                <p>
+                <label for="checkbox">
                   I agree to Zomato's{" "}
                   <span>Terms of Services, Privacy Policy</span> and{" "}
                   {" "}
                   <span>Content Policies</span>
-                </p>
-              </div>
+                </label>
             </div>
             <button
               type="submit"

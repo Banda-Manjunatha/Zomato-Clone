@@ -68,11 +68,11 @@ input[type="checkbox"] {
   accent-color: #ef4f5f;
 }
 
-.conditions p {
+.conditions label {
   color: #696969;
   font-size: 12px;
 }
-.conditions p span {
+.conditions label span {
   color: #ef4f5f;
 }
 .signup-box button {
@@ -103,7 +103,7 @@ button:active.enabled {
 @media(max-width:800px){
   .signup-box {
     width: 60%;
-    height: auto;
+    height: fit-content;
     padding: 0 1rem;
   }
   .signup-box h2 {
@@ -120,7 +120,6 @@ button:active.enabled {
   }
   .signup-box input {
     width: 90%;
-    border: 2px solid;
     padding: 12px 10px;
     height: auto;
     font-size: 13px;
