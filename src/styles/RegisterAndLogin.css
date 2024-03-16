@@ -135,7 +135,7 @@ button:active.enabled {
       width: auto;
       height: auto;
   }
-  .conditions p {
+  .conditions label {
     font-size: 11px;
   }
   .signup-box button {
@@ -174,7 +174,7 @@ button:active.enabled {
       width: auto;
       height: auto;
   }
-  .conditions p {
+  .conditions label {
     font-size: 9px;
   }
   .signup-box button {
