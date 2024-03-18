@@ -2,6 +2,10 @@
 
 Welcome to the Zomato Clone project, a visually stunning React.js application that replicates key features of the popular food delivery platform Zomato. This project incorporates user authentication using Firebase, advanced search filters, and a responsive user interface for an enhanced dining experience.
 
+## Live Showcase
+
+To explore my Zomato Clone project online, simply visit the  link: [live link](https://manjunath-zomato-clone.netlify.app/)
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
@@ -32,11 +36,22 @@ Welcome to the Zomato Clone project, a visually stunning React.js application th
 
   - Implemented a skeleton loading layout for restaurants to improve user experience during data fetching.
   - Ensures a visually appealing and seamless transition while loading restaurant information.
+ 
+- **Complete Item Details:**
+
+  - Enabled users to view detailed information of each item upon clicking.
+  - Facilitates better decision-making for users interested in specific items.
 
 - **Responsive Design:**
   - Developed a visually stunning and responsive webpage that adapts to various screen sizes.
   - Ensures a consistent and enjoyable experience for users across devices.
 
+- **Shopping Cart Functionality**
+  - Integrated a shopping cart feature allowing users to add items.
+  - Users can easily view the number of items in their cart.
+  - Enhances the overall shopping experience by facilitating easy item management.
+
+  
 ## Installation and Usage
 
 1. **Clone the repository:**
