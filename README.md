@@ -4,7 +4,7 @@ Welcome to the Zomato Clone project, a visually stunning React.js application th
 
 ## Live Showcase
 
-To explore my Zomato Clone project online, simply visit the  link: [live link](https://manjunath-zomato-clone.netlify.app/)
+To explore my Zomato Clone project online, simply visit the  link: [ Zomato Clone live link ](https://manjunath-zomato-clone.netlify.app/)
 
 ## Table of Contents
 
